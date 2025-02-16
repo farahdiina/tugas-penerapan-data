@@ -57,15 +57,22 @@ Dengan cakupan proyek yang telah dijelaskan di atas, diharapkan hasil analisis i
 Sumber data: dataset yang digunakan https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee
 
 Setup environment:
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.9  
+conda activate main-ds  
+pip install -r requirements.txt  
+```
 
-- Menggunakan bahasa pemrograman Python dengan pustaka utama:
-  - pandas untuk manipulasi data.
-  - matplotlib & seaborn untuk visualisasi data.
-  - scikit-learn untuk preprocessing dan machine learning.
-  - imblearn untuk menangani ketidakseimbangan data dengan SMOTE.
-  - xgboost untuk model Gradient Boosting.
-  - joblib untuk menyimpan model terbaik.
-- Menggunakan Google Looker Studio untuk dashboard visualisasi hasil analisis.
+## Setup Environment - Shell/Terminal
+```
+mkdir proyek_analisis_data  
+cd proyek_analisis_data  
+pipenv install  
+pipenv shell  
+pip install -r requirements.txt  
+
+```
 
 ## Business Dashboard
 
@@ -80,7 +87,7 @@ Dashboard ini menyajikan berbagai metrik penting untuk menganalisis tingkat attr
 - Hubungan antara status pernikahan dan tingkat attrition memperlihatkan bagaimana status pernikahan dapat berpengaruh terhadap keputusan karyawan untuk tetap bekerja atau mengundurkan diri.
 - Hubungan antara berbagai faktor dengan tingkat attrition menunjukkan faktor-faktor yang paling berkorelasi dengan keputusan karyawan untuk keluar dari perusahaan, seperti peran pekerjaan, jam lembur, perjalanan bisnis, dan status pernikahan.
 
-Dashboard ini memberikan wawasan yang mendalam bagi manajer HR untuk memahami faktor-faktor yang memengaruhi attrition dan membantu dalam merancang strategi yang tepat untuk meningkatkan retensi karyawan.
+Dashboard ini memberikan wawasan yang mendalam bagi manajer HR untuk memahami faktor-faktor yang memengaruhi attrition dan membantu dalam merancang strategi yang tepat untuk meningkatkan retensi karyawan. Dashboard dapar diakses di link berikut : https://lookerstudio.google.com/reporting/2926a89f-9e47-43fa-820e-fc3d202a6ffd
 
 <img width="571" alt="image" src="https://github.com/user-attachments/assets/1736b7c7-f0b2-42b6-8cab-5c3627e6d308" />
 
